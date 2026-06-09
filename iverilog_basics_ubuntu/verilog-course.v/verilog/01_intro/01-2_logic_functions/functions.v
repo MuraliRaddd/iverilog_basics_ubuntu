@@ -83,7 +83,7 @@ module logic_function ();
         /* '$monitor' is a system function, like '$display', and works in a
          * similar way: it print a text string whenever any of the signals in
          * $monitor statement changes its value. The string passed to monitor is
-         * a format string where symbols preceded by '%' are placeholders that
+         * a format string where symbols preceded by '%' are placeholdes that
          * are substituted in order by the values of the rest of parameters. In
          * the example, '%b' is substituted by the corresponding value in binary
          * format. */
@@ -110,7 +110,7 @@ endmodule // function
 
    1. Compile the design with:
 
-        $ iverilog function.v
+        $ iverilog functions.v
 
    2. Execute the simulation with:
 
