@@ -58,7 +58,7 @@ module logic_function ();
      * the following code we assign values to the variables 'a' and 'b' and the
      * simulator we then calculate the value of 'f'. Since 'f' is defined with
      * a continuous assignment, whenever there is a change in any of the
-     * variables, the simulator will calculate a new value of 'f'. To assign
+    * variables, the simulator will calculate a new value of 'f'. To assign
      * 'a' and 'b' we use 'always' blocks. These blocks are used to define
      * 'procedures'. We will see more about that in the next lessons. */
 

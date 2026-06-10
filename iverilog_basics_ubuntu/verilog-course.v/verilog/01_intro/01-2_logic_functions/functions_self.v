@@ -10,7 +10,7 @@ module logic_function_self ();
 
    // Initialise two input signals, by representing them as variables 'a' and 'b' via the 'reg' function. These two variables are to be initially fixed at zero, subject to further
    //  variability via a series of operations.  
-   reg a = 0, b = 0; 
+   reg a = 0, b = 0, c = 0; 
 
    // In the context of the circuit, the two variables modelled above must be
    // associated with a corresponding output terminal, invoked via the 'wire'
@@ -22,7 +22,7 @@ module logic_function_self ();
    // Define the relationship between the input signals and the output
    // terminal via a series of operations (AND (&), OR(|), XOR(^) and NOT(~)). 
    
-   assign f = a & ~b | ~a ^ b; 
+   assign f = (a|b|~c) & (a|~b|c) & (~a|b|c); 
 
    // Invert the input signal 'a' every 10ns (in accordance with the
    // pre-defined timestep of 1ns). 
@@ -32,6 +32,9 @@ module logic_function_self ();
    // pre-defined timestep of 1ns). 
    always
       #20 b = ~b;
+   
+   always 
+      #40 c = ~c;
 
    initial begin
       // The distinction between '$monitor' and '$display' for printing an
@@ -54,7 +57,7 @@ module logic_function_self ();
      $dumpvars(0, logic_function_self);
 
      // Fix the transient simulation range, via the '$finish' command
-     #100 $finish;
+     #200 $finish;
 
    end
 endmodule
