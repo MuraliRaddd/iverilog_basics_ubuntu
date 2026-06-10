@@ -1,0 +1,102 @@
+$date
+	Wed Jun 10 20:11:33 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module descriptions $end
+$var wire 1 ! and1_out $end
+$var wire 1 " and2_out $end
+$var wire 1 # f_est $end
+$var wire 1 $ f_func $end
+$var wire 1 % not_a $end
+$var wire 1 & not_b $end
+$var reg 1 ' a $end
+$var reg 1 ( b $end
+$var reg 1 ) f_proc $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0)
+0(
+0'
+1&
+1%
+0$
+0#
+0"
+0!
+$end
+#10000
+1#
+1$
+1)
+1"
+0%
+1'
+#20000
+1!
+0"
+1%
+0&
+0'
+1(
+#30000
+0#
+0$
+0!
+0)
+0%
+1'
+#40000
+1%
+1&
+0'
+0(
+#50000
+1#
+1$
+1)
+1"
+0%
+1'
+#60000
+1!
+0"
+1%
+0&
+0'
+1(
+#70000
+0#
+0$
+0!
+0)
+0%
+1'
+#80000
+1%
+1&
+0'
+0(
+#90000
+1#
+1$
+1)
+1"
+0%
+1'
+#100000
+1!
+0"
+1%
+0&
+0'
+1(
